@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var canvas = document.getElementById("myCanvas");
     var context = canvas.getContext("2d");
     var triangleText = document.getElementById("triangleText");
+    var questionDiv = document.getElementById("question");
+    var answersDiv = document.getElementById("answers");
 
     // Define the coordinates of the equilateral triangle's vertices
     var triangleSize = 400;
@@ -93,12 +95,26 @@ document.addEventListener("DOMContentLoaded", function() {
         // Add text to vertices
         context.font = "12px Arial";
         context.fillStyle = "black";
-        context.fillText("El costo de mis fuentes de datos es menor al beneficio que obtengo por tenerlas", vertices[0][0] - 210, vertices[0][1] + 30);
-        context.fillText("Considero que la información obtenida de mis fuentes de datos es confiables", vertices[1][0] - 130, vertices[1][1] + 20);
-        context.fillText("El tiempo en el que se recopilan y procesan los datos me permite tomar decisiones oportunas", vertices[2][0] - 180, vertices[2][1] - 20);
+        context.textAlign = "center"; // Align text centrally horizontally
+        context.textBaseline = "middle"; // Align text centrally vertically
+        var offset = 15; // Adjust this value to increase or decrease the offset as needed
+
+        context.fillText("Tiempo", vertices[0][0], vertices[0][1] + offset); // Move text down at Vertex A
+        context.fillText("Calidad", vertices[1][0], vertices[1][1] + offset); // Move text down at Vertex B
+        context.fillText("Costo", vertices[2][0], vertices[2][1] - offset); // Move text up at Vertex C
     }
 
     drawTriangle();
+
+    // Display the question and answers
+    questionDiv.innerHTML = "¿El tiempo en que tengo la información disponible me es útil para mis decisiones?";
+    answersDiv.innerHTML = `
+        <ol>
+            <li>Mis fuentes de datos son confiables para la toma de decisiones, pero resultan costosas y demoran demasiado tiempo en procesar los datos, la información que obtengo a partir de ellas puede demorar más de lo que la organización se puede permitir en reaccionar a tu entorno de negocio.</li>
+            <li>Mis fuentes de datos me representan un bajo coste, pero no tienen un impacto de valor en la calidad de la información que obtengo, no garantizan la disponibilidad de los recursos ni un estándar de servicio que asegure tiempos de reacción aceptables.</li>
+            <li>Mis fuentes de datos tienen una alta disponibilidad y procesan la información de manera ágil, aunque resultan costosas para su uso actual y puede que no sean confiables para la toma de decisiones.</li>
+        </ol>
+    `;
 
     // Button event listener to choose a random point inside the triangle
     var button = document.getElementById("btn");
