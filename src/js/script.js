@@ -6,6 +6,40 @@ document.addEventListener("DOMContentLoaded", function() {
     var questionDiv = document.getElementById("question");
     var answersDiv = document.getElementById("answers");
 
+    // Set up the question and answers
+    questionDiv.innerHTML = "¿El tiempo en que tengo la información disponible me es útil para mis decisiones?";
+    answersDiv.innerHTML = `
+        <ul>
+            <li><button class="answer-btn" data-answer="1">Mis fuentes de datos son confiables para la toma de decisiones, pero resultan costosas y demoran demasiado tiempo en procesar los datos, la información que obtengo a partir de ellas puede demorar más de lo que la organización se puede permitir en reaccionar a tu entorno de negocio.</button></li>
+            <li><button class="answer-btn" data-answer="2">Mis fuentes de datos me representan un bajo coste, pero no tienen un impacto de valor en la calidad de la información que obtengo, no garantizan la disponibilidad de los recursos ni un estándar de servicio que asegure tiempos de reacción aceptables.</button></li>
+            <li><button class="answer-btn" data-answer="3">Mis fuentes de datos tienen una alta disponibilidad y procesan la información de manera ágil, aunque resultan costosas para su uso actual y puede que no sean confiables para la toma de decisiones.</button></li>
+        </ul>
+    `;
+
+    // Function to set up listeners on answer buttons
+    function setupAnswerListeners() {
+        const buttons = document.querySelectorAll('.answer-btn');
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                const selectedAnswer = this.getAttribute('data-answer');
+                console.log("Selected answer:", selectedAnswer);
+                saveAnswer(selectedAnswer);
+            });
+        });
+    }
+
+    function saveAnswer(answer) {
+        // Save the answer in local storage or handle as needed
+        localStorage.setItem('selectedAnswer', answer);
+        alert("Your answer has been saved: " + answer);
+    }
+
+    setupAnswerListeners();
+
+    // Additional code for drawing triangle, handling other canvas operations...
+
+    // Additional functions like drawTriangle, isInsideTriangle, etc., go here
+
     // Define the coordinates of the equilateral triangle's vertices
     var triangleSize = 400;
     var centerX = canvas.width / 2;
@@ -105,16 +139,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     drawTriangle();
-
-    // Display the question and answers
-    questionDiv.innerHTML = "¿El tiempo en que tengo la información disponible me es útil para mis decisiones?";
-    answersDiv.innerHTML = `
-        <ol>
-            <li>Mis fuentes de datos son confiables para la toma de decisiones, pero resultan costosas y demoran demasiado tiempo en procesar los datos, la información que obtengo a partir de ellas puede demorar más de lo que la organización se puede permitir en reaccionar a tu entorno de negocio.</li>
-            <li>Mis fuentes de datos me representan un bajo coste, pero no tienen un impacto de valor en la calidad de la información que obtengo, no garantizan la disponibilidad de los recursos ni un estándar de servicio que asegure tiempos de reacción aceptables.</li>
-            <li>Mis fuentes de datos tienen una alta disponibilidad y procesan la información de manera ágil, aunque resultan costosas para su uso actual y puede que no sean confiables para la toma de decisiones.</li>
-        </ol>
-    `;
 
     // Button event listener to choose a random point inside the triangle
     var button = document.getElementById("btn");
