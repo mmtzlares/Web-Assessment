@@ -1,0 +1,109 @@
+{
+    "quizData": [
+        {
+            "section": "FUENTES DE DATOS",
+            "questions": [
+                {
+                    "question": "Cuando se trata de obtener datos, ¿cómo balancea tu organización la necesidad de rapidez con la calidad de los datos?",
+                    "answers": [
+                        "Siempre priorizamos la rapidez, incluso si afecta negativamente la calidad.",
+                        "Generalmente priorizamos la rapidez, pero intentamos mantener una calidad aceptable.",
+                        "Balanceamos la rapidez y la calidad según la importancia del proyecto.",
+                        "Tendemos a priorizar la calidad, aunque esto signifique obtener los datos más lentamente.",
+                        "La calidad es siempre lo más importante; nunca sacrificamos la calidad por la rapidez."
+                    ]
+                },
+                {
+                    "question": "¿Cómo afecta el presupuesto disponible el proceso de adquisición de datos en tu organización?",
+                    "answers": [
+                        "Operamos con un presupuesto muy limitado, lo que a menudo restringe tanto la rapidez como la calidad.",
+                        "Tenemos un presupuesto ajustado, por lo que buscamos opciones costo-efectivas sin comprometer demasiado la calidad o la rapidez.",
+                        "Manejamos un presupuesto que permite un balance entre costo, rapidez y calidad.",
+                        "El presupuesto no es un gran obstáculo, pero somos conscientes de los costos.",
+                        "Contamos con amplios recursos financieros que nos permiten maximizar tanto la calidad como la rapidez sin preocuparnos por el costo."
+                    ]
+                },
+                {
+                    "question": "En términos de calidad de datos, ¿qué importancia tiene en comparación con el costo de obtención?",
+                    "answers": [
+                        "La calidad de los datos es secundaria; el principal objetivo es minimizar costos.",
+                        "Somos conscientes de los costos, pero no sacrificamos la calidad fundamental.",
+                        "Equilibramos costos y calidad según las necesidades específicas de cada proyecto.",
+                        "La calidad es más importante que el costo, pero mantenemos un presupuesto razonable.",
+                        "Invertimos lo que sea necesario para asegurar la máxima calidad, independientemente del costo."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "ESTADO PROCESOS DE DATOS",
+            "questions": [
+                {
+                    "question": "¿Cómo balancea tu organización la automatización de los procesos de datos con los costos de implementación y mantenimiento?",
+                    "answers": [
+                        "Priorizamos fuertemente la automatización para maximizar la eficiencia, independientemente de los costos iniciales.",
+                        "Implementamos automatización en procesos críticos, balanceando costo y beneficio.",
+                        "Seleccionamos cuidadosamente qué procesos automatizar, con un enfoque en la relación costo-beneficio.",
+                        "La automatización es limitada debido a restricciones presupuestarias.",
+                        "Evitamos la automatización; preferimos procesos manuales por ser más económicos a corto plazo."
+                    ]
+                },
+                {
+                    "question": "Dado el número y la complejidad de los procesos de datos en tu organización, ¿cómo se manejan los recursos para optimizar el tiempo y la calidad?",
+                    "answers": [
+                        "Administramos muchos procesos complejos, invirtiendo en recursos para mantener alta calidad y eficiencia.",
+                        "Equilibramos el número de procesos y su complejidad con un enfoque práctico para maximizar tiempo y calidad dentro del presupuesto.",
+                        "Reducimos la complejidad de los procesos para acelerar los tiempos de entrega, a veces a expensas de la calidad.",
+                        "Limitamos el número de procesos para mantener la calidad sin incrementar demasiado los costos.",
+                        "Nos centramos en procesos menos complejos y más económicos, aunque esto pueda limitar la eficiencia."
+                    ]
+                },
+                {
+                    "question": "¿Cómo asegura tu organización que la fiabilidad de los procesos de datos cumpla con sus objetivos estratégicos, considerando las restricciones de tiempo y costo?",
+                    "answers": [
+                        "Invertimos en alta fiabilidad para asegurar que cada proceso cumpla con su propósito estratégico, sin importar el costo.",
+                        "Balanceamos fiabilidad con restricciones de tiempo y costo para alinearlos con nuestros objetivos estratégicos.",
+                        "Priorizamos los objetivos estratégicos aunque esto implique compromisos en la fiabilidad y aumento en los costos.",
+                        "Minimizamos los costos aunque esto pueda comprometer la fiabilidad en ciertos procesos no críticos.",
+                        "Aceptamos compromisos en la fiabilidad y los tiempos de ejecución para mantener los costos bajos."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "INTELIGENCIA DE NEGOCIO",
+            "questions": [
+                {
+                    "question": "¿Cómo equilibra tu organización el uso de recursos con la necesidad de mantener la calidad de la información para la inteligencia de negocio?",
+                    "answers": [
+                        "Maximizamos el uso de recursos para asegurar la máxima calidad, sin importar el costo.",
+                        "Buscamos un equilibrio eficiente entre el uso de recursos y la calidad de la información.",
+                        "Optimizamos recursos, lo que a veces puede comprometer la calidad de la información.",
+                        "Minimizamos el uso de recursos, priorizando proyectos de bajo costo incluso si afecta la calidad.",
+                        "Ajustamos el uso de recursos según el impacto esperado de la información en decisiones críticas."
+                    ]
+                },
+                {
+                    "question": "¿Cómo gestiona tu organización los riesgos asociados con la inteligencia de negocios en relación con la utilidad de la información obtenida?",
+                    "answers": [
+                        "Asumimos riesgos significativos para obtener información altamente útil.",
+                        "Equilibramos los riesgos con la utilidad esperada de la información.",
+                        "Somos cautelosos con los riesgos, a veces sacrificando la utilidad de la información.",
+                        "Evitamos riesgos que podrían comprometer operaciones, aun si limita la utilidad de la información.",
+                        "Priorizamos la minimización de riesgos sobre la utilidad de la información en todas las circunstancias."
+                    ]
+                },
+                {
+                    "question": "Considerando la interdependencia entre la inteligencia de negocios y las operaciones, ¿cómo maneja tu organización este vínculo en términos de recursos, riesgos y calidad?",
+                    "answers": [
+                        "Invertimos abundantemente en fortalecer este vínculo, minimizando riesgos y maximizando calidad.",
+                        "Balanceamos recursos para mantener una buena interdependencia sin comprometer demasiado la calidad o aumentar los riesgos.",
+                        "Moderamos el uso de recursos, lo cual puede incrementar riesgos o afectar la calidad del vínculo.",
+                        "Limitamos los recursos asignados a este vínculo, priorizando otros aspectos del negocio aunque aumente los riesgos.",
+                        "La calidad del vínculo es la máxima prioridad, gestionamos recursos y riesgos para optimizarla."
+                    ]
+                }
+            ]
+        }
+    ]
+}
