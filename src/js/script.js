@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var currentSectionIndex = 0;
     var quizData = [];  
 
-    fetch("../../data.json")  // Update the file path as necessary
+    fetch("../../data/data.json")  // Update the file path as necessary
         .then(response => response.json())
         .then(data => {
             quizData = data.quizData;
