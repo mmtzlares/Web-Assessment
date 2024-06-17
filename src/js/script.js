@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             quizData = data.quizData;
             displayQuestion(currentSectionIndex, currentQuestionIndex);
-            drawTriangle();
+            drawTriangle(quizData[currentSectionIndex].section);
         })
         .catch(error => {
             console.error('Error loading the quiz data:', error);
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .map((answer, idx) => `<li><button class="answer-btn" data-answer="${idx}">${answer}</button></li>`)
             .join('');
         setupAnswerListeners();
-        drawTriangle();
+        drawTriangle(quizData[sectionIndex].section);
     }
 
     function setupAnswerListeners() {
@@ -54,8 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     }
-
-    function drawTriangle() {
+    function drawTriangle(section) {
         var triangleSize = 400;
         var centerX = canvas.width / 2;
         var centerY = canvas.height / 2;
@@ -114,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
             context.lineTo(centroidToVerticesMidpoints[nextIndex][0], centroidToVerticesMidpoints[nextIndex][1]);
             context.stroke();
         });
-
+    
         // Draw segments from the centroid to each side's midpoint
         midpoints.forEach(midpoint => {
         context.beginPath();
@@ -128,6 +127,11 @@ document.addEventListener("DOMContentLoaded", function() {
         context.beginPath();
         context.arc(centroidX, centroidY, radius, 0, 2 * Math.PI);
         context.stroke();
-    }
+    
+        // Draw the section text aligned with the top vertex, spaced further
+        context.font = "16px Arial";
+        context.textAlign = 'center'; // Center the text horizontally
+        context.fillText(section, vertices[2][0], vertices[2][1] - 40); // Increase the spacing by adjusting the y-coordinate further up
+    }  
             
 });
