@@ -104,6 +104,142 @@
                     ]
                 }
             ]
-        }
+        },
+        {
+            "section": "IMPACTO DE LAS FALLAS Y ERRORES",
+            "questions": [
+                {
+                    "question": "¿Cómo gestiona tu organización las fallas y errores en términos de recursos utilizados, riesgos asumidos y calidad asegurada?",
+                    "answers": [
+                        "Maximizamos los recursos para minimizar las fallas y sus impactos, sin importar los costos.",
+                        "Equilibramos recursos y riesgos para mantener una calidad aceptable sin exceder el presupuesto.",
+                        "Limitamos el uso de recursos, lo que puede incrementar los riesgos y afectar la calidad.",
+                        "Priorizamos la minimización de riesgos, incluso si esto requiere más recursos.",
+                        "Enfocamos en mantener alta calidad en la respuesta a fallas, incluso si aumenta los riesgos."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "PERCEPCIÓN DE VALOR ENTREGADO",
+            "questions": [
+                {
+                    "question": "¿Cómo equilibra tu organización tiempo, alcance y costo para maximizar el valor percibido del proyecto tanto interna como externamente?",
+                    "answers": [
+                        "Priorizamos el tiempo para cumplir con las expectativas rápidas de entrega, aunque pueda afectar el alcance y costos.",
+                        "Mantenemos un balance entre tiempo, alcance y costos para optimizar la satisfacción del cliente.",
+                        "Enfocamos en mantener el presupuesto, ajustando tiempo y alcance según sea necesario.",
+                        "Extendemos el alcance para agregar más valor, incluso si esto implica mayores costos o más tiempo.",
+                        "Controlamos estrictamente los costos, lo que puede limitar el alcance pero garantiza la entrega a tiempo."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "PROCESOS DE AUDITORÍA Y CONCILIACIÓN",
+            "questions": [
+                {
+                    "question": "¿Cómo maneja tu organización los procesos de auditoría y conciliación considerando recursos, riesgos y calidad?",
+                    "answers": [
+                        "Invertimos abundantemente en auditorías frecuentes y rigurosas para asegurar alta calidad.",
+                        "Balanceamos los recursos asignados a auditorías para mantener un nivel adecuado de riesgo y calidad.",
+                        "Reducimos la frecuencia de auditorías para conservar recursos, aceptando un aumento en los riesgos.",
+                        "Priorizamos la mitigación de riesgos a través de auditorías, incluso si requiere más recursos.",
+                        "Enfocamos en la calidad de las auditorías, asegurando que cada una sea profunda, aunque menos frecuente."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "MONITOREO END TO END",
+            "questions": [
+                {
+                    "question": "¿Cómo balancea tu organización el monitoreo integral de procesos considerando recursos, riesgos y calidad?",
+                    "answers": [
+                        "Maximizamos los recursos para un monitoreo completo, minimizando riesgos y maximizando calidad.",
+                        "Buscamos un equilibrio eficiente entre recursos invertidos y calidad del monitoreo.",
+                        "Optimizamos el uso de recursos, lo que puede limitar la capacidad de monitoreo pero controla los costos.",
+                        "Minimizamos los riesgos mediante un monitoreo extensivo, aunque esto requiere más recursos.",
+                        "Priorizamos la calidad y profundidad del monitoreo, aunque aumente los costos y los recursos necesarios."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "NIVEL DE MANUALIDAD/AUTOMATIZACIÓN",
+            "questions": [
+                {
+                    "question": "¿Cómo gestiona tu organización el equilibrio entre procesos manuales y automatizados en términos de tiempo, alcance y costo?",
+                    "answers": [
+                        "Priorizamos la automatización para ahorrar tiempo y costos, aunque inicialmente el alcance pueda ser limitado.",
+                        "Equilibramos tiempo, costo y alcance para optimizar tanto procesos manuales como automatizados.",
+                        "Mantenemos muchos procesos manuales para controlar costos, aunque esto pueda aumentar el tiempo de operación.",
+                        "Expandimos el alcance de la automatización, invirtiendo más pero mejorando la fiabilidad y reduciendo el tiempo de operación.",
+                        "Controlamos los costos minimizando la automatización, lo que puede requerir más tiempo pero mantiene el alcance bajo control."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "TALENTO ESPECIALIZADO",
+            "questions": [
+                {
+                    "question": "¿Cómo gestiona tu organización el equilibrio entre recursos, riesgos y calidad al construir equipos especializados?",
+                    "answers": [
+                        "Maximizamos recursos para formar equipos altamente especializados, aceptando riesgos mayores.",
+                        "Balanceamos recursos y riesgos para mantener un nivel adecuado de especialización y tamaño de equipo.",
+                        "Limitamos el tamaño y la especialización de los equipos para conservar recursos, aceptando compromisos en calidad.",
+                        "Enfocamos en mantener una alta calidad en las áreas de especialidad, aun si esto implica mayores riesgos o más recursos.",
+                        "Priorizamos la integridad y el equilibrio en los equipos, asegurando interconexión y acceso a la información a pesar de los riesgos."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "VENTAJAS COMPETITIVAS BASADAS EN DATOS",
+            "questions": [
+                {
+                    "question": "¿Cómo balancea tu organización calidad, alcance y recursos para desarrollar ventajas competitivas basadas en datos?",
+                    "answers": [
+                        "Priorizamos la calidad de los datos para obtener ventajas competitivas claras, aunque limita el alcance.",
+                        "Mantenemos un equilibrio entre calidad, alcance y recursos para adaptarnos al contexto de mercado.",
+                        "Optimizamos recursos enfocando en segmentos específicos de la industria para maximizar el impacto.",
+                        "Extendemos el alcance de nuestras ventajas competitivas a costa de aumentar los recursos y sacrificando algo de calidad.",
+                        "Controlamos estrictamente los recursos, lo que puede restringir el alcance pero asegura mantener la calidad."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "SEGURIDAD DE LOS DATOS",
+            "questions": [
+                {
+                    "question": "¿Cómo maneja tu organización los trade-offs entre riesgos, recursos y alcance en la seguridad de los datos?",
+                    "answers": [
+                        "Priorizamos recursos para fortalecer la seguridad a pesar de los riesgos y ampliar el alcance.",
+                        "Equilibramos los recursos invertidos en seguridad con el nivel de riesgo aceptable y el alcance deseado.",
+                        "Limitamos el alcance de nuestras políticas de seguridad para administrar recursos, aceptando más riesgos.",
+                        "Minimizamos los riesgos invirtiendo en políticas y tecnología de seguridad avanzada, aunque requiere recursos significativos.",
+                        "Controlamos los costos en seguridad, lo que puede limitar el alcance pero mantiene los riesgos manejables."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "ANALÍTICA AVANZADA Y REPORTEO",
+            "questions": [
+                {
+                    "question": "¿Cómo balancea tu organización calidad, costo y recursos en los procesos de análisis y reporteo?",
+                    "answers": [
+                        "Maximizamos la calidad de los análisis y reportes, sin preocuparnos por el costo o los recursos.",
+                        "Mantenemos un equilibrio entre calidad, costo y recursos para asegurar análisis efectivos y útiles.",
+                        "Optimizamos los costos, lo que puede afectar la calidad pero asegura la eficiencia en recursos.",
+                        "Enfocamos en minimizar los costos de operación, sacrificando potencialmente la calidad de los análisis.",
+                        "Priorizamos recursos para obtener reportes de alta calidad, aceptando costos mayores."
+                    ]
+                }
+            ]
+        }        
+        
     ]
 }
