@@ -2,6 +2,7 @@
     "quizData": [
         {
             "section": "FUENTES DE DATOS",
+            "trade-offs": ["Tiempo", "Calidad", "Costo"],
             "questions": [
                 {
                     "question": "Cuando se trata de obtener datos, ¿cómo balancea tu organización la necesidad de rapidez con la calidad de los datos?",
@@ -37,6 +38,7 @@
         },
         {
             "section": "ESTADO PROCESOS DE DATOS",
+            "trade-offs": ["Tiempo", "Calidad", "Costo"],
             "questions": [
                 {
                     "question": "¿Cómo balancea tu organización la automatización de los procesos de datos con los costos de implementación y mantenimiento?",
@@ -72,6 +74,7 @@
         },
         {
             "section": "INTELIGENCIA DE NEGOCIO",
+            "trade-offs": ["Recursos", "Riesgos", "Calidad"],
             "questions": [
                 {
                     "question": "¿Cómo equilibra tu organización el uso de recursos con la necesidad de mantener la calidad de la información para la inteligencia de negocio?",
@@ -107,6 +110,7 @@
         },
         {
             "section": "IMPACTO DE LAS FALLAS Y ERRORES",
+            "trade-offs": ["Recursos", "Riesgos", "Calidad"],
             "questions": [
                 {
                     "question": "¿Cómo gestiona tu organización las fallas y errores en términos de recursos utilizados, riesgos asumidos y calidad asegurada?",
@@ -122,6 +126,7 @@
         },
         {
             "section": "PERCEPCIÓN DE VALOR ENTREGADO",
+            "trade-offs": ["Tiempo", "Alcance", "Costo"],
             "questions": [
                 {
                     "question": "¿Cómo equilibra tu organización tiempo, alcance y costo para maximizar el valor percibido del proyecto tanto interna como externamente?",
@@ -137,6 +142,7 @@
         },
         {
             "section": "PROCESOS DE AUDITORÍA Y CONCILIACIÓN",
+            "trade-offs": ["Recursos", "Riesgos", "Calidad"],
             "questions": [
                 {
                     "question": "¿Cómo maneja tu organización los procesos de auditoría y conciliación considerando recursos, riesgos y calidad?",
@@ -152,6 +158,7 @@
         },
         {
             "section": "MONITOREO END TO END",
+            "trade-offs": ["Recursos", "Riesgos", "Calidad"],
             "questions": [
                 {
                     "question": "¿Cómo balancea tu organización el monitoreo integral de procesos considerando recursos, riesgos y calidad?",
@@ -167,6 +174,7 @@
         },
         {
             "section": "NIVEL DE MANUALIDAD/AUTOMATIZACIÓN",
+            "trade-offs": ["Tiempo", "Alcance", "Costo"],
             "questions": [
                 {
                     "question": "¿Cómo gestiona tu organización el equilibrio entre procesos manuales y automatizados en términos de tiempo, alcance y costo?",
@@ -182,6 +190,7 @@
         },
         {
             "section": "TALENTO ESPECIALIZADO",
+            "trade-offs": ["Recursos", "Riesgos", "Calidad"],
             "questions": [
                 {
                     "question": "¿Cómo gestiona tu organización el equilibrio entre recursos, riesgos y calidad al construir equipos especializados?",
@@ -197,6 +206,7 @@
         },
         {
             "section": "VENTAJAS COMPETITIVAS BASADAS EN DATOS",
+            "trade-offs": ["Calidad", "Alcance", "Recursos"],
             "questions": [
                 {
                     "question": "¿Cómo balancea tu organización calidad, alcance y recursos para desarrollar ventajas competitivas basadas en datos?",
@@ -212,6 +222,7 @@
         },
         {
             "section": "SEGURIDAD DE LOS DATOS",
+            "trade-offs": ["Riesgos", "Recursos", "Alcance"],
             "questions": [
                 {
                     "question": "¿Cómo maneja tu organización los trade-offs entre riesgos, recursos y alcance en la seguridad de los datos?",
@@ -227,6 +238,7 @@
         },
         {
             "section": "ANALÍTICA AVANZADA Y REPORTEO",
+            "trade-offs": ["Calidad", "Costo", "Recursos"],
             "questions": [
                 {
                     "question": "¿Cómo balancea tu organización calidad, costo y recursos en los procesos de análisis y reporteo?",
