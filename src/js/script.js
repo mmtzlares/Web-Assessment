@@ -7,9 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var currentQuestionIndex = 0;
     var currentSectionIndex = 0;
-    var quizData = [];  
+    var quizData = [];
+    var clickPosition = null;  // Variable to store the click position
+  
 
-    fetch("../../data/data.json")  // Update the file path as necessary
+    fetch("questions.json")  // Update the file path as necessary
         .then(response => response.json())
         .then(data => {
             quizData = data.quizData;
@@ -19,6 +21,76 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => {
             console.error('Error loading the quiz data:', error);
         });
+
+        function pointInTriangle(px, py, v1, v2, v3) {
+            var d1, d2, d3;
+            var has_neg, has_pos;
+    
+            function sign(p1, p2, p3) {
+                return (p1[0] - p3[0]) * (p2[1] - p3[1]) - (p2[0] - p3[0]) * (p1[1] - p3[1]);
+            }
+    
+            d1 = sign([px, py], v1, v2);
+            d2 = sign([px, py], v2, v3);
+            d3 = sign([px, py], v3, v1);
+    
+            has_neg = (d1 < 0) || (d2 < 0) || (d3 < 0);
+            has_pos = (d1 > 0) || (d2 > 0) || (d3 > 0);
+    
+            return !(has_neg && has_pos);
+        }
+    
+        canvas.addEventListener('click', function(event) {
+            var rect = canvas.getBoundingClientRect();
+            var x = event.clientX - rect.left;
+            var y = event.clientY - rect.top;
+        
+            var vertices = getTriangleVertices();
+            if (pointInTriangle(x, y, vertices[0], vertices[1], vertices[2])) {
+                console.log('Clicked inside the triangle');
+                // Clear previous content and redraw the triangle
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                drawTriangle(quizData[currentSectionIndex].section, quizData[currentSectionIndex]["trade-offs"]);
+                drawMark(x, y);  // Draw the new mark
+            }
+        });
+        
+        function drawMark(x, y) {
+            var radius = 5;  // Radius of the circle mark
+            context.beginPath();
+            context.arc(x, y, radius, 0, 2 * Math.PI, false);
+            context.fillStyle = 'red';  // Color of the mark
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = '#003300';
+            context.stroke();
+        }
+        
+    
+        canvas.addEventListener('mousemove', function(event) {
+            var rect = canvas.getBoundingClientRect();
+            var x = event.clientX - rect.left;
+            var y = event.clientY - rect.top;
+    
+            var vertices = getTriangleVertices();
+            if (pointInTriangle(x, y, vertices[0], vertices[1], vertices[2])) {
+                canvas.style.cursor = 'pointer';
+            } else {
+                canvas.style.cursor = 'default';
+            }
+        });
+    
+        function getTriangleVertices() {
+            var triangleSize = 400;
+            var centerX = canvas.width / 2;
+            var centerY = canvas.height / 2;
+            var height = Math.sqrt(3) * triangleSize / 2;
+            return [
+                [centerX - triangleSize / 2, centerY + height / 2], // Vertex A (Left vertex)
+                [centerX + triangleSize / 2, centerY + height / 2], // Vertex B (Right vertex)
+                [centerX, centerY - height / 2] // Vertex C (Top vertex)
+            ];
+        }
 
     function displayQuestion(sectionIndex, questionIndex) {
         if (sectionIndex >= quizData.length || questionIndex >= quizData[sectionIndex].questions.length) {
@@ -84,6 +156,11 @@ document.addEventListener("DOMContentLoaded", function() {
         ];
     
         context.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Set the styles for the triangle
+        context.strokeStyle = 'black';
+        context.fillStyle = 'black';
+        context.lineWidth = 2;
     
         // Draw the main triangle
         context.beginPath();
