@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var clickPosition = null;  // Variable to store the click position
   
 
-    fetch("questions.json")  // Update the file path as necessary
+    fetch("../../data/data.json")  // Update the file path as necessary
         .then(response => response.json())
         .then(data => {
             quizData = data.quizData;
