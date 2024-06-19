@@ -1,0 +1,257 @@
+{
+    "quizData": [
+        {
+            "section": "FUENTES DE DATOS",
+            "trade-offs": ["Tiempo", "Calidad", "Costo"],
+            "questions": [
+                {
+                    "question": "Cuando se trata de obtener datos, ¿cómo balancea tu organización la necesidad de rapidez con la calidad de los datos?",
+                    "answers": [
+                        "Siempre priorizamos la rapidez, incluso si afecta negativamente la calidad.",
+                        "Generalmente priorizamos la rapidez, pero intentamos mantener una calidad aceptable.",
+                        "Balanceamos la rapidez y la calidad según la importancia del proyecto.",
+                        "Tendemos a priorizar la calidad, aunque esto signifique obtener los datos más lentamente.",
+                        "La calidad es siempre lo más importante; nunca sacrificamos la calidad por la rapidez."
+                    ]
+                },
+                {
+                    "question": "¿Cómo afecta el presupuesto disponible el proceso de adquisición de datos en tu organización?",
+                    "answers": [
+                        "Operamos con un presupuesto muy limitado, lo que a menudo restringe tanto la rapidez como la calidad.",
+                        "Tenemos un presupuesto ajustado, por lo que buscamos opciones costo-efectivas sin comprometer demasiado la calidad o la rapidez.",
+                        "Manejamos un presupuesto que permite un balance entre costo, rapidez y calidad.",
+                        "El presupuesto no es un gran obstáculo, pero somos conscientes de los costos.",
+                        "Contamos con amplios recursos financieros que nos permiten maximizar tanto la calidad como la rapidez sin preocuparnos por el costo."
+                    ]
+                },
+                {
+                    "question": "En términos de calidad de datos, ¿qué importancia tiene en comparación con el costo de obtención?",
+                    "answers": [
+                        "La calidad de los datos es secundaria; el principal objetivo es minimizar costos.",
+                        "Somos conscientes de los costos, pero no sacrificamos la calidad fundamental.",
+                        "Equilibramos costos y calidad según las necesidades específicas de cada proyecto.",
+                        "La calidad es más importante que el costo, pero mantenemos un presupuesto razonable.",
+                        "Invertimos lo que sea necesario para asegurar la máxima calidad, independientemente del costo."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "ESTADO PROCESOS DE DATOS",
+            "trade-offs": ["Tiempo", "Calidad", "Costo"],
+            "questions": [
+                {
+                    "question": "¿Cómo balancea tu organización la automatización de los procesos de datos con los costos de implementación y mantenimiento?",
+                    "answers": [
+                        "Priorizamos fuertemente la automatización para maximizar la eficiencia, independientemente de los costos iniciales.",
+                        "Implementamos automatización en procesos críticos, balanceando costo y beneficio.",
+                        "Seleccionamos cuidadosamente qué procesos automatizar, con un enfoque en la relación costo-beneficio.",
+                        "La automatización es limitada debido a restricciones presupuestarias.",
+                        "Evitamos la automatización; preferimos procesos manuales por ser más económicos a corto plazo."
+                    ]
+                },
+                {
+                    "question": "Dado el número y la complejidad de los procesos de datos en tu organización, ¿cómo se manejan los recursos para optimizar el tiempo y la calidad?",
+                    "answers": [
+                        "Administramos muchos procesos complejos, invirtiendo en recursos para mantener alta calidad y eficiencia.",
+                        "Equilibramos el número de procesos y su complejidad con un enfoque práctico para maximizar tiempo y calidad dentro del presupuesto.",
+                        "Reducimos la complejidad de los procesos para acelerar los tiempos de entrega, a veces a expensas de la calidad.",
+                        "Limitamos el número de procesos para mantener la calidad sin incrementar demasiado los costos.",
+                        "Nos centramos en procesos menos complejos y más económicos, aunque esto pueda limitar la eficiencia."
+                    ]
+                },
+                {
+                    "question": "¿Cómo asegura tu organización que la fiabilidad de los procesos de datos cumpla con sus objetivos estratégicos, considerando las restricciones de tiempo y costo?",
+                    "answers": [
+                        "Invertimos en alta fiabilidad para asegurar que cada proceso cumpla con su propósito estratégico, sin importar el costo.",
+                        "Balanceamos fiabilidad con restricciones de tiempo y costo para alinearlos con nuestros objetivos estratégicos.",
+                        "Priorizamos los objetivos estratégicos aunque esto implique compromisos en la fiabilidad y aumento en los costos.",
+                        "Minimizamos los costos aunque esto pueda comprometer la fiabilidad en ciertos procesos no críticos.",
+                        "Aceptamos compromisos en la fiabilidad y los tiempos de ejecución para mantener los costos bajos."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "INTELIGENCIA DE NEGOCIO",
+            "trade-offs": ["Recursos", "Riesgos", "Calidad"],
+            "questions": [
+                {
+                    "question": "¿Cómo equilibra tu organización el uso de recursos con la necesidad de mantener la calidad de la información para la inteligencia de negocio?",
+                    "answers": [
+                        "Maximizamos el uso de recursos para asegurar la máxima calidad, sin importar el costo.",
+                        "Buscamos un equilibrio eficiente entre el uso de recursos y la calidad de la información.",
+                        "Optimizamos recursos, lo que a veces puede comprometer la calidad de la información.",
+                        "Minimizamos el uso de recursos, priorizando proyectos de bajo costo incluso si afecta la calidad.",
+                        "Ajustamos el uso de recursos según el impacto esperado de la información en decisiones críticas."
+                    ]
+                },
+                {
+                    "question": "¿Cómo gestiona tu organización los riesgos asociados con la inteligencia de negocios en relación con la utilidad de la información obtenida?",
+                    "answers": [
+                        "Asumimos riesgos significativos para obtener información altamente útil.",
+                        "Equilibramos los riesgos con la utilidad esperada de la información.",
+                        "Somos cautelosos con los riesgos, a veces sacrificando la utilidad de la información.",
+                        "Evitamos riesgos que podrían comprometer operaciones, aun si limita la utilidad de la información.",
+                        "Priorizamos la minimización de riesgos sobre la utilidad de la información en todas las circunstancias."
+                    ]
+                },
+                {
+                    "question": "Considerando la interdependencia entre la inteligencia de negocios y las operaciones, ¿cómo maneja tu organización este vínculo en términos de recursos, riesgos y calidad?",
+                    "answers": [
+                        "Invertimos abundantemente en fortalecer este vínculo, minimizando riesgos y maximizando calidad.",
+                        "Balanceamos recursos para mantener una buena interdependencia sin comprometer demasiado la calidad o aumentar los riesgos.",
+                        "Moderamos el uso de recursos, lo cual puede incrementar riesgos o afectar la calidad del vínculo.",
+                        "Limitamos los recursos asignados a este vínculo, priorizando otros aspectos del negocio aunque aumente los riesgos.",
+                        "La calidad del vínculo es la máxima prioridad, gestionamos recursos y riesgos para optimizarla."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "IMPACTO DE LAS FALLAS Y ERRORES",
+            "trade-offs": ["Recursos", "Riesgos", "Calidad"],
+            "questions": [
+                {
+                    "question": "¿Cómo gestiona tu organización las fallas y errores en términos de recursos utilizados, riesgos asumidos y calidad asegurada?",
+                    "answers": [
+                        "Maximizamos los recursos para minimizar las fallas y sus impactos, sin importar los costos.",
+                        "Equilibramos recursos y riesgos para mantener una calidad aceptable sin exceder el presupuesto.",
+                        "Limitamos el uso de recursos, lo que puede incrementar los riesgos y afectar la calidad.",
+                        "Priorizamos la minimización de riesgos, incluso si esto requiere más recursos.",
+                        "Enfocamos en mantener alta calidad en la respuesta a fallas, incluso si aumenta los riesgos."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "PERCEPCIÓN DE VALOR ENTREGADO",
+            "trade-offs": ["Tiempo", "Alcance", "Costo"],
+            "questions": [
+                {
+                    "question": "¿Cómo equilibra tu organización tiempo, alcance y costo para maximizar el valor percibido del proyecto tanto interna como externamente?",
+                    "answers": [
+                        "Priorizamos el tiempo para cumplir con las expectativas rápidas de entrega, aunque pueda afectar el alcance y costos.",
+                        "Mantenemos un balance entre tiempo, alcance y costos para optimizar la satisfacción del cliente.",
+                        "Enfocamos en mantener el presupuesto, ajustando tiempo y alcance según sea necesario.",
+                        "Extendemos el alcance para agregar más valor, incluso si esto implica mayores costos o más tiempo.",
+                        "Controlamos estrictamente los costos, lo que puede limitar el alcance pero garantiza la entrega a tiempo."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "PROCESOS DE AUDITORÍA Y CONCILIACIÓN",
+            "trade-offs": ["Recursos", "Riesgos", "Calidad"],
+            "questions": [
+                {
+                    "question": "¿Cómo maneja tu organización los procesos de auditoría y conciliación considerando recursos, riesgos y calidad?",
+                    "answers": [
+                        "Invertimos abundantemente en auditorías frecuentes y rigurosas para asegurar alta calidad.",
+                        "Balanceamos los recursos asignados a auditorías para mantener un nivel adecuado de riesgo y calidad.",
+                        "Reducimos la frecuencia de auditorías para conservar recursos, aceptando un aumento en los riesgos.",
+                        "Priorizamos la mitigación de riesgos a través de auditorías, incluso si requiere más recursos.",
+                        "Enfocamos en la calidad de las auditorías, asegurando que cada una sea profunda, aunque menos frecuente."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "MONITOREO END TO END",
+            "trade-offs": ["Recursos", "Riesgos", "Calidad"],
+            "questions": [
+                {
+                    "question": "¿Cómo balancea tu organización el monitoreo integral de procesos considerando recursos, riesgos y calidad?",
+                    "answers": [
+                        "Maximizamos los recursos para un monitoreo completo, minimizando riesgos y maximizando calidad.",
+                        "Buscamos un equilibrio eficiente entre recursos invertidos y calidad del monitoreo.",
+                        "Optimizamos el uso de recursos, lo que puede limitar la capacidad de monitoreo pero controla los costos.",
+                        "Minimizamos los riesgos mediante un monitoreo extensivo, aunque esto requiere más recursos.",
+                        "Priorizamos la calidad y profundidad del monitoreo, aunque aumente los costos y los recursos necesarios."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "NIVEL DE MANUALIDAD/AUTOMATIZACIÓN",
+            "trade-offs": ["Tiempo", "Alcance", "Costo"],
+            "questions": [
+                {
+                    "question": "¿Cómo gestiona tu organización el equilibrio entre procesos manuales y automatizados en términos de tiempo, alcance y costo?",
+                    "answers": [
+                        "Priorizamos la automatización para ahorrar tiempo y costos, aunque inicialmente el alcance pueda ser limitado.",
+                        "Equilibramos tiempo, costo y alcance para optimizar tanto procesos manuales como automatizados.",
+                        "Mantenemos muchos procesos manuales para controlar costos, aunque esto pueda aumentar el tiempo de operación.",
+                        "Expandimos el alcance de la automatización, invirtiendo más pero mejorando la fiabilidad y reduciendo el tiempo de operación.",
+                        "Controlamos los costos minimizando la automatización, lo que puede requerir más tiempo pero mantiene el alcance bajo control."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "TALENTO ESPECIALIZADO",
+            "trade-offs": ["Recursos", "Riesgos", "Calidad"],
+            "questions": [
+                {
+                    "question": "¿Cómo gestiona tu organización el equilibrio entre recursos, riesgos y calidad al construir equipos especializados?",
+                    "answers": [
+                        "Maximizamos recursos para formar equipos altamente especializados, aceptando riesgos mayores.",
+                        "Balanceamos recursos y riesgos para mantener un nivel adecuado de especialización y tamaño de equipo.",
+                        "Limitamos el tamaño y la especialización de los equipos para conservar recursos, aceptando compromisos en calidad.",
+                        "Enfocamos en mantener una alta calidad en las áreas de especialidad, aun si esto implica mayores riesgos o más recursos.",
+                        "Priorizamos la integridad y el equilibrio en los equipos, asegurando interconexión y acceso a la información a pesar de los riesgos."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "VENTAJAS COMPETITIVAS BASADAS EN DATOS",
+            "trade-offs": ["Calidad", "Alcance", "Recursos"],
+            "questions": [
+                {
+                    "question": "¿Cómo balancea tu organización calidad, alcance y recursos para desarrollar ventajas competitivas basadas en datos?",
+                    "answers": [
+                        "Priorizamos la calidad de los datos para obtener ventajas competitivas claras, aunque limita el alcance.",
+                        "Mantenemos un equilibrio entre calidad, alcance y recursos para adaptarnos al contexto de mercado.",
+                        "Optimizamos recursos enfocando en segmentos específicos de la industria para maximizar el impacto.",
+                        "Extendemos el alcance de nuestras ventajas competitivas a costa de aumentar los recursos y sacrificando algo de calidad.",
+                        "Controlamos estrictamente los recursos, lo que puede restringir el alcance pero asegura mantener la calidad."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "SEGURIDAD DE LOS DATOS",
+            "trade-offs": ["Riesgos", "Recursos", "Alcance"],
+            "questions": [
+                {
+                    "question": "¿Cómo maneja tu organización los trade-offs entre riesgos, recursos y alcance en la seguridad de los datos?",
+                    "answers": [
+                        "Priorizamos recursos para fortalecer la seguridad a pesar de los riesgos y ampliar el alcance.",
+                        "Equilibramos los recursos invertidos en seguridad con el nivel de riesgo aceptable y el alcance deseado.",
+                        "Limitamos el alcance de nuestras políticas de seguridad para administrar recursos, aceptando más riesgos.",
+                        "Minimizamos los riesgos invirtiendo en políticas y tecnología de seguridad avanzada, aunque requiere recursos significativos.",
+                        "Controlamos los costos en seguridad, lo que puede limitar el alcance pero mantiene los riesgos manejables."
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "ANALÍTICA AVANZADA Y REPORTEO",
+            "trade-offs": ["Calidad", "Costo", "Recursos"],
+            "questions": [
+                {
+                    "question": "¿Cómo balancea tu organización calidad, costo y recursos en los procesos de análisis y reporteo?",
+                    "answers": [
+                        "Maximizamos la calidad de los análisis y reportes, sin preocuparnos por el costo o los recursos.",
+                        "Mantenemos un equilibrio entre calidad, costo y recursos para asegurar análisis efectivos y útiles.",
+                        "Optimizamos los costos, lo que puede afectar la calidad pero asegura la eficiencia en recursos.",
+                        "Enfocamos en minimizar los costos de operación, sacrificando potencialmente la calidad de los análisis.",
+                        "Priorizamos recursos para obtener reportes de alta calidad, aceptando costos mayores."
+                    ]
+                }
+            ]
+        }        
+        
+    ]
+}
