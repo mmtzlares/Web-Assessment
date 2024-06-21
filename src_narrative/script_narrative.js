@@ -46,14 +46,45 @@ document.addEventListener("DOMContentLoaded", function() {
             var y = event.clientY - rect.top;
         
             var vertices = getTriangleVertices();
+            var midpoints = calculateMidpoints(vertices);
+            var centroid = calculateCentroid(vertices);
+            var subTriangles = defineSubTriangles(vertices, midpoints, centroid);
+            var radius = Math.sqrt(400 * Math.sqrt(3) * 400 / 2 / (21 * Math.PI)); // Triangle size hardcoded for simplicity
+        
+            // Check for click within the concentric circle at the centroid
+            if (Math.sqrt((x - centroid[0]) ** 2 + (y - centroid[1]) ** 2) <= radius) {
+                console.log('Clicked inside the concentric circle at the centroid');
+                displayCircleText();
+                return; // Prevent further text from being displayed if inside the circle
+            }
+        
+            let clickedInSubTriangle = false;
+        
+            // Check if click is within any sub-triangle and display relevant text
+            subTriangles.forEach((triangle, index) => {
+                if (pointInTriangle(x, y, triangle[0], triangle[1], triangle[2])) {
+                    console.log('Clicked inside sub-triangle ' + (index + 1));
+                    displayTriangleText(index + 1);
+                    clickedInSubTriangle = true;
+                }
+            });
+        
+            // Main triangle click check
             if (pointInTriangle(x, y, vertices[0], vertices[1], vertices[2])) {
-                console.log('Clicked inside the triangle');
+                console.log('Clicked inside the main triangle');
+        
                 // Clear previous content and redraw the triangle
                 context.clearRect(0, 0, canvas.width, canvas.height);
                 drawTriangle(quizData[currentSectionIndex].section, quizData[currentSectionIndex]["trade-offs"]);
-                drawMark(x, y);  // Draw the new mark
+        
+                // Draw the mark irrespective of sub-triangle click
+                drawMark(x, y);
             }
         });
+
+        function displayCircleText() {
+            triangleText.innerHTML = "Text for clicks inside the concentric circle at the centroid";
+        }
         
         function drawMark(x, y) {
             var radius = 5;  // Radius of the circle mark
@@ -64,6 +95,25 @@ document.addEventListener("DOMContentLoaded", function() {
             context.lineWidth = 1;
             context.strokeStyle = '#003300';
             context.stroke();
+        }
+
+        function displayTriangleText(triangleNumber) {
+            var textMappings = {
+                1: "Text for triangle 1",
+                2: "Text for triangle 2",
+                3: "Text for triangle 3",
+                4: "Text for triangle 4",
+                5: "Text for triangle 5",
+                6: "Text for triangle 6",
+                7: "Text for triangle 7",
+                8: "Text for triangle 8",
+                9: "Text for triangle 9",
+                10: "Text for triangle 10",
+                11: "Text for triangle 11",
+                12: "Text for triangle 12"
+            };
+        
+            triangleText.innerHTML = textMappings[triangleNumber];
         }
         
     
@@ -91,6 +141,53 @@ document.addEventListener("DOMContentLoaded", function() {
                 [centerX, centerY - height / 2] // Vertex C (Top vertex)
             ];
         }
+
+        function calculateMidpoints(vertices) {
+            return [
+                [(vertices[0][0] + vertices[1][0]) / 2, (vertices[0][1] + vertices[1][1]) / 2],
+                [(vertices[1][0] + vertices[2][0]) / 2, (vertices[1][1] + vertices[2][1]) / 2],
+                [(vertices[2][0] + vertices[0][0]) / 2, (vertices[2][1] + vertices[0][1]) / 2]
+            ];
+        }
+        
+        function calculateCentroid(vertices) {
+            return [
+                (vertices[0][0] + vertices[1][0] + vertices[2][0]) / 3,
+                (vertices[0][1] + vertices[1][1] + vertices[2][1]) / 3
+            ];
+        }
+
+        function defineSubTriangles(vertices, midpoints, centroid) {
+            var triangles = [];
+            // Centroid to vertices midpoints
+            var cvMidpoints = [
+                [(vertices[0][0] + centroid[0]) / 2, (vertices[0][1] + centroid[1]) / 2],
+                [(vertices[1][0] + centroid[0]) / 2, (vertices[1][1] + centroid[1]) / 2],
+                [(vertices[2][0] + centroid[0]) / 2, (vertices[2][1] + centroid[1]) / 2]
+            ];
+        
+            // Triangle 1-3: Around each vertex, connecting to centroid and nearest side midpoints
+            triangles.push([vertices[0], midpoints[0], cvMidpoints[0]]); // Triangle around vertex A
+            triangles.push([vertices[1], midpoints[1], cvMidpoints[1]]); // Triangle around vertex B
+            triangles.push([vertices[2], midpoints[2], cvMidpoints[2]]); // Triangle around vertex C
+        
+            // Triangle 4-6: Connecting vertex, side midpoint to adjacent vertex midpoint on line to centroid
+            triangles.push([vertices[0], cvMidpoints[0], midpoints[2]]); // Triangle using Vertex A, Midpoint CA, and midpoint from A to centroid
+            triangles.push([vertices[1], cvMidpoints[1], midpoints[0]]); // Triangle using Vertex B, Midpoint AB, and midpoint from B to centroid
+            triangles.push([vertices[2], cvMidpoints[2], midpoints[1]]); // Triangle using Vertex C, Midpoint BC, and midpoint from C to centroid
+        
+            // Triangle 7-9: Formed by side midpoints, vertex to centroid midpoints, and centroid
+            triangles.push([midpoints[0], cvMidpoints[0], centroid]); // Triangle M_AB, C_A, Centroid
+            triangles.push([midpoints[1], cvMidpoints[1], centroid]); // Triangle M_BC, C_B, Centroid
+            triangles.push([midpoints[2], cvMidpoints[2], centroid]); // Triangle M_CA, C_C, Centroid
+        
+            // Triangle 10-12: Alternate midpoints forming triangles with the centroid
+            triangles.push([midpoints[0], cvMidpoints[1], centroid]); // Triangle M_AB, C_B, Centroid
+            triangles.push([midpoints[1], cvMidpoints[2], centroid]); // Triangle M_BC, C_C, Centroid
+            triangles.push([midpoints[2], cvMidpoints[0], centroid]); // Triangle M_CA, C_A, Centroid
+        
+            return triangles;
+        }                
 
     function drawTriangle(section, tradeOffs) {
         var triangleSize = 400;
